@@ -27,11 +27,11 @@ app.post('/bfhl', (req, res) => {
         const data = req.body.data;
 
 
-        const user_id = "pranav_saluja_2111981140";
+        const user_id = "2111981312";
 
 
-        const email = "umesh1206.be21@chitkarauniversity.edu.in";
-        const roll_number = "2111981206";
+        const email = "akansha1312.be21@chitkarauniversity.edu.in";
+        const roll_number = "2111981312";
         const odd_numbers = [];
         const even_numbers = [];
         const alphabets = [];
@@ -59,11 +59,12 @@ app.post('/bfhl', (req, res) => {
             even_numbers: even_numbers,
             alphabets: alphabets
         };
+    console.log(response);
         res.json(response);
 });
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+const PORT = 3000;
+app.listen(3000);
+    
+
